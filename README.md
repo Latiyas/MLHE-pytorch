@@ -1,5 +1,5 @@
 # MLHE-pytorch
-# Code Appendix for Monotone Learning with Hypothesis Evolution
+Code Appendix for Monotone Learning with Hypothesis Evolution
 
 ## Requirements
 - Python 3.7
