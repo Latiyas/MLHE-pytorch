@@ -25,7 +25,7 @@ Install pytorch, scikit-learn, statsmodels, matplotlib, datasets, transformers, 
 		|-- CIFAR10			# to save intermediate results for CIFAR-10
 		|-- MNIST			# to save intermediate results for MNIST
 		|-- SST2			# to save intermediate results for SST-2
-		|-- TinyImageNet	# to save intermediate results for Tiny ImageNet
+		|-- TinyImageNet		# to save intermediate results for Tiny ImageNet
 ```
 
 ## Data set
