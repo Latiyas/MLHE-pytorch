@@ -103,12 +103,12 @@ def Analysis(datastate, datasettype, split_num, retain_num):
                     else:
                         R9.append(int((data_len - n_monotone) * 100 / data_len))
 
-            lc['mean5'] = np.mean(R5)
-            lc['std5'] = np.std(R5)
-            lc['mean8'] = np.mean(R8)
-            lc['std8'] = np.std(R8)
-            lc['mean9'] = np.mean(R9)
-            lc['std9'] = np.std(R9)
+        lc['mean5'] = np.mean(R5)
+        lc['std5'] = np.std(R5)
+        lc['mean8'] = np.mean(R8)
+        lc['std8'] = np.std(R8)
+        lc['mean9'] = np.mean(R9)
+        lc['std9'] = np.std(R9)
 
     return lc
 
