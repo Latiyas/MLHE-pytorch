@@ -92,9 +92,7 @@ def output_config(args):
 """executing algorithm"""
 def execute(ML, args):
     # declare instance for GAN
-    if args.algo_type == 'restarttraining':
-        result = ML.restarttraining()
-    elif args.algo_type == 'retraining':
+    if args.algo_type == 'retraining':
         result = ML.retraining()
     elif args.algo_type == 'MTsimple':
         result = ML.MTsimple()
