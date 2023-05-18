@@ -57,37 +57,6 @@ class MonotoneLearning:
 
         return y_score
 
-    # Retraining model each iteration
-    def retraining(self):
-        means = self.tools
-
-        # save test error
-        y_score = []
-
-        # get base model
-        n_set = means.get_model()
-
-        for i in range(self.args.epochs):
-            if self.args.process_model:
-                utils.output_process(i)
-
-            o_set = copy.deepcopy(n_set)
-
-            # get training set and test set
-            train, test = means.get_dataset(i)
-            trainloader = means.get_dataloader(train, train=True)
-            testloader = means.get_dataloader(test, train=False)
-
-            n_set = means.train_model(o_set, trainloader)
-
-            bscore, _ = means.test_model(n_set, testloader)
-
-            best_score = bscore
-
-            y_score.append(best_score)
-
-        return y_score
-
     # Repetition MTsimple
     def MTsimple(self):
         means = self.tools
