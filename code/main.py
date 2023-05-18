@@ -9,7 +9,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=desc)
 
     parser.add_argument('--algo_type', type=str, default='retraining',
-                        choices=['restarttraining', 'retraining', 'MTsimple', 'MLHE'],
+                        choices=['retraining', 'MTsimple', 'MTht', 'MTcv', 'MLHE'],
                         help='The type of algorithm')
     parser.add_argument('--dataset', type=str, default='MNIST',
                         choices=['MNIST', 'CIFAR10', 'SST2', 'TinyImageNet'],
