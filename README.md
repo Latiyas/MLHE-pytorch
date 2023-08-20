@@ -18,9 +18,10 @@ Install pytorch, scikit-learn, statsmodels, matplotlib, datasets, transformers, 
 	|-- SST2				# SST-2 data set can be put here
 		|-- csv_data      		# the processed data from SST-2 can be put here
 		|-- tsv_data      		# raw data from SST-2 can be put here
-	|-- TinyImageNet				# Tiny ImageNet data set can be put here
+	|-- TinyImageNet			# Tiny ImageNet data set can be put here
 |-- prediction_result				# final result will be stored here
 |-- user_data           			# user data
+	|-- model_data        			# to save model file
 	|-- tmp_data        			# to save temporary file
 		|-- CIFAR10			# to save intermediate results for CIFAR-10
 		|-- MNIST			# to save intermediate results for MNIST
