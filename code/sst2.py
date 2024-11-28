@@ -183,7 +183,7 @@ class sst2_utils:
             for i in range(self.epoch_num):
                 train_slice.append(list(range(i * self.train_num, (i + 1) * self.train_num)))
                 test_slice.append(list(range(i * self.test_num, (i + 1) * self.test_num)))
-        # random sampling (put back)
+        # random sampling (not put back)
         elif state == 2:
             for i in range(self.epoch_num):
                 train_slice.append(random.sample(range(self.train_num * self.epoch_num), self.train_num))
